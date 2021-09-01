@@ -12,9 +12,9 @@ export const Home = ()=>{
             <Search/>
 
             <div className="row">
-                {cards.map(()=>{
+                {cards.map(card=>{
                     return(
-                        <div className="col-sm-4 mn-4">
+                        <div className="col-sm-4 mn-4" key={card}>
                             <Card/>
                         </div>
                     )
